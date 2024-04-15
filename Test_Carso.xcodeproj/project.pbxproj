@@ -14,6 +14,10 @@
 		203995D22BC718C400D9104C /* Test_CarsoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995D12BC718C400D9104C /* Test_CarsoTests.swift */; };
 		203995DC2BC718C400D9104C /* Test_CarsoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995DB2BC718C400D9104C /* Test_CarsoUITests.swift */; };
 		203995DE2BC718C400D9104C /* Test_CarsoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995DD2BC718C400D9104C /* Test_CarsoUITestsLaunchTests.swift */; };
+		203995EB2BC7229F00D9104C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995EA2BC7229E00D9104C /* ViewModel.swift */; };
+		203995ED2BC7256000D9104C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995EC2BC7256000D9104C /* Model.swift */; };
+		203995EF2BC8DCE300D9104C /* PokemonDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995EE2BC8DCE300D9104C /* PokemonDetalle.swift */; };
+		203995F32BCCD3B100D9104C /* CustomAsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203995F22BCCD3B100D9104C /* CustomAsyncView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		203995D72BC718C400D9104C /* Test_CarsoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_CarsoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		203995DB2BC718C400D9104C /* Test_CarsoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CarsoUITests.swift; sourceTree = "<group>"; };
 		203995DD2BC718C400D9104C /* Test_CarsoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CarsoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		203995EA2BC7229E00D9104C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		203995EC2BC7256000D9104C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		203995EE2BC8DCE300D9104C /* PokemonDetalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetalle.swift; sourceTree = "<group>"; };
+		203995F22BCCD3B100D9104C /* CustomAsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,12 @@
 			children = (
 				203995C02BC718C100D9104C /* Test_CarsoApp.swift */,
 				203995C22BC718C100D9104C /* ContentView.swift */,
+				203995EE2BC8DCE300D9104C /* PokemonDetalle.swift */,
+				203995EA2BC7229E00D9104C /* ViewModel.swift */,
+				203995EC2BC7256000D9104C /* Model.swift */,
 				203995C42BC718C300D9104C /* Assets.xcassets */,
 				203995C62BC718C300D9104C /* Preview Content */,
+				203995F22BCCD3B100D9104C /* CustomAsyncView.swift */,
 			);
 			path = Test_Carso;
 			sourceTree = "<group>";
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203995EF2BC8DCE300D9104C /* PokemonDetalle.swift in Sources */,
 				203995C32BC718C100D9104C /* ContentView.swift in Sources */,
+				203995F32BCCD3B100D9104C /* CustomAsyncView.swift in Sources */,
+				203995EB2BC7229F00D9104C /* ViewModel.swift in Sources */,
 				203995C12BC718C100D9104C /* Test_CarsoApp.swift in Sources */,
+				203995ED2BC7256000D9104C /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,13 +438,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Test_Carso/Preview Content\"";
+				DEVELOPMENT_TEAM = 88BB53ELV9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,13 +468,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Test_Carso/Preview Content\"";
+				DEVELOPMENT_TEAM = 88BB53ELV9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokedex;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
